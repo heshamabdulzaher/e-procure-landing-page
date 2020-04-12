@@ -1,0 +1,22 @@
+.hero {
+  padding: 3rem 0 13rem;
+  color: #fff;
+  position: relative;
+  h5 {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 40px;
+    margin: 1rem 0 1.5rem;
+  }
+  p {
+    font-size: 22px;
+    margin-bottom: 3.5rem;
+  }
+  svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100% !important;
+  }
+}
