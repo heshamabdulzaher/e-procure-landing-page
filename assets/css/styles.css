@@ -33,7 +33,7 @@ a {
 }
 
 .gradient {
-  background: linear-gradient(110deg, #005da1 0%, #923b8d 100%);
+  background-image: linear-gradient(to left, #6a11cb 0%, #2575fc 100%);
 }
 
 .flex {
@@ -51,10 +51,6 @@ a {
 }
 .flex.justify-between {
   justify-content: space-between;
-}
-
-header {
-  padding: 10px;
 }
 
 .btn {
@@ -114,6 +110,25 @@ header {
   font-size: 22px;
 }
 
+header {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  transform: translateY(-100%);
+  transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+header.show {
+  transform: translateY(0);
+}
+header .btn {
+  color: #fff;
+}
+
 .hero {
   padding: 3rem 0 13rem;
   color: #fff;
@@ -129,6 +144,18 @@ header {
 .hero p {
   font-size: 22px;
   margin-bottom: 3.5rem;
+}
+.hero .btn {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  background-color: #fff;
+}
+.hero .content {
+  padding-right: 30px;
+}
+.hero .hero-img img {
+  width: 580px;
 }
 .hero svg {
   position: absolute;

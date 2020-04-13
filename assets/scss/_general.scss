@@ -39,7 +39,7 @@ a {
 }
 
 .gradient {
-  background: linear-gradient(110deg, $mainColor 0%, $purpleColor 100%);
+  background-image: linear-gradient(to left, #6a11cb 0%, #2575fc 100%);
 }
 
 .flex {
@@ -57,10 +57,6 @@ a {
   &.justify-between {
     justify-content: space-between;
   }
-}
-
-header {
-  padding: 10px;
 }
 
 .btn {
