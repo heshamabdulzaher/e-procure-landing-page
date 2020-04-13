@@ -16,7 +16,6 @@ body {
   background-color: #f8f8f8;
   color: $txtColor;
   font-weight: normal;
-  height: 3000vh;
 }
 
 p {
@@ -47,6 +46,9 @@ a {
   &.flex-wrap {
     flex-wrap: wrap;
   }
+  &.flex-direction-column {
+    flex-direction: column;
+  }
   &.flex-center {
     align-items: center;
     justify-content: center;
@@ -67,6 +69,11 @@ a {
   font-size: 18px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  display: inline-flex;
+  align-items: center;
+  &.white-btn {
+    background-color: #fff;
+  }
 }
 
 .section-title {
@@ -90,10 +97,10 @@ a {
 }
 
 .why-eProcure {
-  ul {
+  .features {
     list-style-type: none;
     padding-top: 40px;
-    li {
+    > li {
       width: 28%;
       margin-bottom: 80px;
       box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
@@ -109,11 +116,60 @@ a {
       .card-content {
         padding: 30px;
         padding-top: 10px;
-        text-align: center;
         .card-title {
           margin-bottom: 20px;
           font-size: 22px;
+          text-align: center;
         }
+        ul {
+          list-style-type: disc;
+          padding-left: 20px;
+          li {
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// CTA
+.cta {
+  padding: 12rem 0 4rem;
+  margin-top: 6rem;
+  position: relative;
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+  }
+  h2 {
+    color: #fff;
+    &::after {
+      background: #fff;
+      opacity: 0.2;
+    }
+  }
+}
+
+footer {
+  padding: 20px 0;
+  .main-container {
+    text-align: center;
+    p {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    .copyright,
+    .links {
+      padding: 0 20px;
+    }
+    a {
+      transition: 0.13s ease-out;
+      &:hover {
+        color: $mainColor;
+        text-decoration: underline;
       }
     }
   }
