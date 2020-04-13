@@ -89,82 +89,6 @@ a {
   background: linear-gradient(110deg, #005da1 0%, #923b8d 100%);
 }
 
-.why-eProcure .features {
-  list-style-type: none;
-  padding-top: 40px;
-}
-.why-eProcure .features > li {
-  width: 28%;
-  margin-bottom: 80px;
-  box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
-  background-color: #fff;
-  border-radius: 8px;
-}
-.why-eProcure .features > li .card-cover {
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.04);
-  background-color: #fff;
-  transform: translate(-24px, -24px);
-}
-.why-eProcure .features > li .card-content {
-  padding: 30px;
-  padding-top: 10px;
-}
-.why-eProcure .features > li .card-content .card-title {
-  margin-bottom: 20px;
-  font-size: 22px;
-  text-align: center;
-}
-.why-eProcure .features > li .card-content ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-.why-eProcure .features > li .card-content ul li {
-  line-height: 30px;
-}
-
-.cta {
-  padding: 12rem 0 4rem;
-  margin-top: 6rem;
-  position: relative;
-}
-.cta svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-}
-.cta h2 {
-  color: #fff;
-}
-.cta h2::after {
-  background: #fff;
-  opacity: 0.2;
-}
-
-footer {
-  padding: 20px 0;
-}
-footer .main-container {
-  text-align: center;
-}
-footer .main-container p {
-  margin-bottom: 12px;
-  font-size: 16px;
-}
-footer .main-container .copyright,
-footer .main-container .links {
-  padding: 0 20px;
-}
-footer .main-container a {
-  transition: 0.13s ease-out;
-}
-footer .main-container a:hover {
-  color: #005da1;
-  text-decoration: underline;
-}
-
 header {
   padding: 20px 0;
   position: fixed;
@@ -234,6 +158,82 @@ header .btn {
   font-size: 30px;
   padding-top: 20px;
   line-height: 42px;
+}
+
+.why-eProcure .features {
+  list-style-type: none;
+  padding-top: 40px;
+}
+.why-eProcure .features > li {
+  width: 28%;
+  margin-bottom: 80px;
+  box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  border-radius: 8px;
+}
+.why-eProcure .features > li .card-cover {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  transform: translate(-24px, -24px);
+}
+.why-eProcure .features > li .card-content {
+  padding: 30px;
+  padding-top: 10px;
+}
+.why-eProcure .features > li .card-content .card-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-align: center;
+}
+.why-eProcure .features > li .card-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.why-eProcure .features > li .card-content ul li {
+  line-height: 30px;
+}
+
+.cta {
+  padding: 12rem 0 4rem;
+  margin-top: 6rem;
+  position: relative;
+}
+.cta svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+}
+.cta h2 {
+  color: #fff;
+}
+.cta h2::after {
+  background: #fff;
+  opacity: 0.2;
+}
+
+footer {
+  padding: 30px 0;
+}
+footer .main-container {
+  text-align: center;
+}
+footer .main-container p {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+footer .main-container .copyright,
+footer .main-container .links {
+  padding: 0 20px;
+}
+footer .main-container a {
+  transition: 0.13s ease-out;
+}
+footer .main-container a:hover {
+  color: #005da1;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
