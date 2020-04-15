@@ -28,7 +28,7 @@ a {
   max-width: 1300px;
   width: 100%;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .gradient {
@@ -113,9 +113,6 @@ header .btn {
   color: #fff;
   position: relative;
 }
-.hero h5 {
-  font-size: 14px;
-}
 .hero h1 {
   font-size: 40px;
   margin: 1rem 0 1.5rem;
@@ -125,7 +122,7 @@ header .btn {
   margin-bottom: 3.5rem;
 }
 .hero .white-logo {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .hero .content {
   padding-right: 30px;
