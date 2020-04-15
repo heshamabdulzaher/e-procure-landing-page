@@ -4,7 +4,7 @@
   margin: 0;
   border: 0;
   outline: 0;
-  font-family: "Roboto Slab", serif;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 body {
@@ -109,7 +109,7 @@ header .btn {
 }
 
 .hero {
-  padding: 3rem 0 13rem;
+  padding: 2rem 0 7rem;
   color: #fff;
   position: relative;
 }
@@ -123,6 +123,9 @@ header .btn {
 .hero p {
   font-size: 22px;
   margin-bottom: 3.5rem;
+}
+.hero .white-logo {
+  margin-bottom: 80px;
 }
 .hero .content {
   padding-right: 30px;
@@ -164,34 +167,33 @@ header .btn {
   list-style-type: none;
   padding-top: 40px;
 }
-.why-eProcure .features > li {
+.why-eProcure .features .feature-card {
   width: 28%;
   margin-bottom: 80px;
   box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
   background-color: #fff;
   border-radius: 8px;
+  overflow: hidden;
 }
-.why-eProcure .features > li .card-cover {
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.04);
-  background-color: #fff;
-  transform: translate(-24px, -24px);
+.why-eProcure .features .feature-card .card-cover {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
 }
-.why-eProcure .features > li .card-content {
+.why-eProcure .features .feature-card .card-content {
   padding: 30px;
   padding-top: 10px;
 }
-.why-eProcure .features > li .card-content .card-title {
+.why-eProcure .features .feature-card .card-content .card-title {
   margin-bottom: 20px;
   font-size: 22px;
   text-align: center;
 }
-.why-eProcure .features > li .card-content ul {
+.why-eProcure .features .feature-card .card-content ul {
   list-style-type: disc;
   padding-left: 20px;
 }
-.why-eProcure .features > li .card-content ul li {
+.why-eProcure .features .feature-card .card-content ul li {
   line-height: 30px;
 }
 
@@ -215,7 +217,7 @@ header .btn {
 }
 
 footer {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 footer .main-container {
   text-align: center;
