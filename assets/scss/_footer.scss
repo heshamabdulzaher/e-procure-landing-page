@@ -1,5 +1,6 @@
 footer {
   padding-top: 40px;
+  background-color: #fff;
   .col {
     // width: 25%;
     font-size: 15px;
@@ -22,12 +23,10 @@ footer {
     }
   }
   .copyright {
+    background-color: #f4f5f4;
     margin-top: 30px;
-    padding: 24px 0;
     text-align: center;
-    background-color: #f0f0f0;
-    div {
-      line-height: 40px;
-    }
+    font-size: 14px;
+    line-height: 46px;
   }
 }

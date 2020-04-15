@@ -218,6 +218,7 @@ header .btn {
 
 footer {
   padding-top: 40px;
+  background-color: #fff;
 }
 footer .col {
   font-size: 15px;
@@ -240,13 +241,11 @@ footer .col ul a:hover {
   text-decoration: underline;
 }
 footer .copyright {
+  background-color: #f4f5f4;
   margin-top: 30px;
-  padding: 24px 0;
   text-align: center;
-  background-color: #f0f0f0;
-}
-footer .copyright div {
-  line-height: 40px;
+  font-size: 14px;
+  line-height: 46px;
 }
 
 /*# sourceMappingURL=styles.css.map */
