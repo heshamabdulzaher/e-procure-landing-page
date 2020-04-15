@@ -217,25 +217,36 @@ header .btn {
 }
 
 footer {
-  padding: 40px 0;
+  padding-top: 40px;
 }
-footer .main-container {
-  text-align: center;
+footer .col {
+  font-size: 15px;
+  flex: 1;
 }
-footer .main-container p {
-  margin-bottom: 12px;
-  font-size: 16px;
+footer .col p {
+  font-size: 14px;
+  color: #a0aec0;
 }
-footer .main-container .copyright,
-footer .main-container .links {
-  padding: 0 20px;
+footer .col ul {
+  padding-top: 8px;
+  list-style-type: none;
 }
-footer .main-container a {
+footer .col ul a {
+  padding: 6px 0;
   transition: 0.13s ease-out;
 }
-footer .main-container a:hover {
+footer .col ul a:hover {
   color: #005da1;
   text-decoration: underline;
+}
+footer .copyright {
+  margin-top: 30px;
+  padding: 24px 0;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+footer .copyright div {
+  line-height: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
