@@ -109,6 +109,18 @@ header .btn {
   color: #fff;
 }
 
+@media screen and (max-width: 500px) {
+  header {
+    padding: 12px 0;
+  }
+  header .btn {
+    font-size: 16px;
+    padding: 0 28px;
+  }
+  header img {
+    width: 120px;
+  }
+}
 .hero {
   padding-bottom: 7rem;
   color: #fff;
