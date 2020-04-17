@@ -1,5 +1,5 @@
 .hero {
-  padding-bottom: 7rem;
+  padding-bottom: 8rem;
   color: #fff;
   position: relative;
   h1 {
@@ -16,9 +16,11 @@
   }
   .content {
     padding-right: 30px;
+    flex: 1;
   }
   .hero-img img {
     width: 580px;
+    flex: 1;
   }
   svg {
     position: absolute;

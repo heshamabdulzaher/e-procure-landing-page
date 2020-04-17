@@ -2,8 +2,7 @@ $videoContainerWidth: 700px;
 $videoContainerHeight: 407px;
 $videoContainerPadding: 28px 80px 56px 87px;
 .about {
-  margin: 6rem 0;
-  padding: 80px 0;
+  padding: 8rem 0 6rem;
   background-color: #fff;
   .video-container {
     background-image: url('/assets/img/laptop-wireframe.png');
@@ -95,7 +94,7 @@ $videoContainerPadding: 28px 80px 56px 87px;
     }
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 405px) {
   $videoContainerHeight: 210px;
   .about {
     .video-container {

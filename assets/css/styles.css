@@ -74,7 +74,7 @@ a {
   text-align: center;
   position: relative;
   padding-bottom: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .section-title::after {
   content: "";
@@ -109,7 +109,7 @@ header .btn {
   color: #fff;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 430px) {
   header {
     padding: 12px 0;
   }
@@ -122,7 +122,7 @@ header .btn {
   }
 }
 .hero {
-  padding-bottom: 7rem;
+  padding-bottom: 8rem;
   color: #fff;
   position: relative;
 }
@@ -140,9 +140,11 @@ header .btn {
 }
 .hero .content {
   padding-right: 30px;
+  flex: 1;
 }
 .hero .hero-img img {
   width: 580px;
+  flex: 1;
 }
 .hero svg {
   position: absolute;
@@ -188,8 +190,7 @@ header .btn {
   }
 }
 .about {
-  margin: 6rem 0;
-  padding: 80px 0;
+  padding: 8rem 0 6rem;
   background-color: #fff;
 }
 .about .video-container {
@@ -265,7 +266,7 @@ header .btn {
     padding: 16px 47px 39px 51px;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 405px) {
   .about .video-container {
     height: 210px;
   }
@@ -280,7 +281,6 @@ header .btn {
 }
 .why-eProcure .features {
   list-style-type: none;
-  padding-top: 40px;
 }
 .why-eProcure .feature-card {
   background-color: #fff;
@@ -368,20 +368,22 @@ header .btn {
 .comparing-cards {
   padding-top: 6rem;
 }
+.comparing-cards .main-container {
+  position: relative;
+}
 .comparing-cards .card {
   background-color: #fff;
   width: calc(100% / 3 - 24px);
   box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
   border-radius: 8px;
+  overflow: hidden;
+}
+.comparing-cards .card.collapse {
+  width: 0;
 }
 .comparing-cards .card .card-logo {
-  border-radius: 8px 8px 0 0;
   height: 100px;
   background-color: #f9f9f9;
-}
-.comparing-cards .card.e-procure .card-logo {
-  height: 140px;
-  margin-top: -40px;
 }
 .comparing-cards .card .card-content {
   padding: 20px 0;
@@ -394,7 +396,7 @@ header .btn {
   height: 80px;
   display: flex;
   position: relative;
-  color: #a0aec0;
+  color: #5a6d86;
   font-size: 16px;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -418,7 +420,45 @@ header .btn {
 .comparing-cards .card .card-content li.checkmark-icon::after {
   background-image: url("/assets/img/checkmark-icon.svg");
 }
+.comparing-cards .next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-bottom-left-radius: 90px;
+  border-top-left-radius: 90px;
+  height: 90px;
+  width: 45px;
+  background-color: #1f1f1f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+@media screen and (max-width: 1300px) {
+  .comparing-cards .card {
+    width: calc(100% / 3 - 16px);
+  }
+
+  .comparing-cards .card .card-content li {
+    height: 105px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .comparing-cards {
+    overflow-x: auto;
+  }
+  .comparing-cards .main-container {
+    padding: 0 50px;
+  }
+  .comparing-cards .card {
+    width: calc(100% / 2 - 12px);
+  }
+  .comparing-cards .card:first-of-type {
+    margin-right: 24px;
+  }
+}
 .cta {
   padding: 12rem 0 4rem;
   margin-top: 6rem;

@@ -1,18 +1,20 @@
 .comparing-cards {
   padding-top: 6rem;
+  .main-container {
+    position: relative;
+  }
   .card {
     background-color: #fff;
     width: calc(100% / 3 - 24px);
     box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
     border-radius: 8px;
+    overflow: hidden;
+    &.collapse {
+      width: 0;
+    }
     .card-logo {
-      border-radius: 8px 8px 0 0;
       height: 100px;
       background-color: #f9f9f9;
-    }
-    &.e-procure .card-logo {
-      height: 140px;
-      margin-top: -40px;
     }
     .card-content {
       padding: 20px 0;
@@ -24,7 +26,7 @@
         height: 80px;
         display: flex;
         position: relative;
-        color: #a0aec0;
+        color: #5a6d86;
         font-size: 16px;
         border-bottom: 1px solid #f0f0f0;
         &:last-of-type {
@@ -47,6 +49,44 @@
             background-image: url('/assets/img/checkmark-icon.svg');
           }
         }
+      }
+    }
+  }
+  .next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-bottom-left-radius: 90px;
+    border-top-left-radius: 90px;
+    height: 90px;
+    width: 45px;
+    background-color: #1f1f1f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .comparing-cards .card {
+    width: calc(100% / 3 - 16px);
+  }
+  .comparing-cards .card .card-content li {
+    height: 105px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .comparing-cards {
+    overflow-x: auto;
+    .main-container {
+      padding: 0 50px;
+    }
+    .card {
+      width: calc(100% / 2 - 12px);
+      &:first-of-type {
+        margin-right: 24px;
       }
     }
   }
