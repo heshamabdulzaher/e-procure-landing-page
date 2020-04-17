@@ -4,6 +4,7 @@
   margin: 0;
   border: 0;
   outline: 0;
+  max-width: 100%;
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -28,7 +29,7 @@ a {
   max-width: 1300px;
   width: 100%;
   margin: auto;
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 .gradient {
@@ -115,6 +116,7 @@ header .btn {
 }
 .hero h1 {
   font-size: 40px;
+  line-height: 1.5;
   margin: 1rem 0 1.5rem;
 }
 .hero p {
@@ -137,6 +139,42 @@ header .btn {
   width: 100% !important;
 }
 
+@media screen and (max-width: 1190px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+  .hero .hero-img img {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero .content {
+    padding-top: 30px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero .hero-img img {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .hero .main-container {
+    flex-direction: column;
+  }
+  .hero .content {
+    text-align: center;
+    padding-right: 0;
+  }
+  .hero .hero-img img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+}
 .about {
   margin: 6rem 0;
   padding: 80px 40px;
