@@ -213,7 +213,7 @@ header .btn {
   list-style-type: none;
   padding-top: 40px;
 }
-.why-eProcure .features .feature-card {
+.why-eProcure .feature-card {
   background-color: #fff;
   width: calc(100% / 3 - 24px);
   box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
@@ -221,28 +221,81 @@ header .btn {
   overflow: hidden;
   margin-bottom: 40px;
 }
-.why-eProcure .features .feature-card .card-cover {
+.why-eProcure .feature-card .card-img {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 30px;
 }
-.why-eProcure .features .feature-card .card-content {
+.why-eProcure .feature-card .card-content {
   padding: 30px;
   padding-top: 10px;
 }
-.why-eProcure .features .feature-card .card-content .card-title {
+.why-eProcure .feature-card .card-content .card-title {
   margin-bottom: 20px;
   font-size: 22px;
   text-align: center;
 }
-.why-eProcure .features .feature-card .card-content ul {
+.why-eProcure .feature-card .card-content ul {
   list-style-type: disc;
   padding-left: 20px;
 }
-.why-eProcure .features .feature-card .card-content ul li {
+.why-eProcure .feature-card .card-content ul li {
   line-height: 30px;
 }
 
+@media screen and (max-width: 1080px) {
+  .why-eProcure .features {
+    flex-direction: column;
+  }
+  .why-eProcure .features .feature-card {
+    width: 100%;
+    position: relative;
+    min-height: 190px;
+    padding-right: 200px;
+  }
+  .why-eProcure .features .feature-card .card-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .why-eProcure .features .feature-card .card-img img {
+    width: 180px;
+  }
+  .why-eProcure .features .feature-card .card-content {
+    padding: 30px;
+    padding-right: 0;
+  }
+  .why-eProcure .features .feature-card .card-content .card-title {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 700px) {
+  .why-eProcure .features .feature-card .card-img img {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .why-eProcure .features {
+    flex-direction: row;
+  }
+  .why-eProcure .features .feature-card {
+    min-height: auto;
+    padding-right: 0;
+  }
+  .why-eProcure .features .feature-card .card-img {
+    position: static;
+    margin-bottom: 0;
+  }
+  .why-eProcure .features .feature-card .card-img img {
+    width: 200px;
+  }
+  .why-eProcure .features .feature-card .card-content {
+    padding: 30px 20px !important;
+  }
+  .why-eProcure .features .feature-card .card-content .card-title {
+    text-align: left;
+  }
+}
 .comparing-cards {
   padding-top: 6rem;
 }
