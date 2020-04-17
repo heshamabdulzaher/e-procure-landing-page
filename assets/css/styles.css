@@ -138,7 +138,7 @@ header .btn {
 }
 
 .about {
-  margin: 8rem 0;
+  margin: 6rem 0;
   padding: 80px 40px;
   background-color: #fff;
   border-radius: 20px;
@@ -168,17 +168,20 @@ header .btn {
   line-height: 42px;
 }
 
+.why-eProcure {
+  padding-top: 4rem;
+}
 .why-eProcure .features {
   list-style-type: none;
   padding-top: 40px;
 }
 .why-eProcure .features .feature-card {
-  width: calc(100% / 3 - 24px);
-  margin-bottom: 40px;
-  box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
   background-color: #fff;
+  width: calc(100% / 3 - 24px);
+  box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 .why-eProcure .features .feature-card .card-cover {
   display: flex;
@@ -200,6 +203,60 @@ header .btn {
 }
 .why-eProcure .features .feature-card .card-content ul li {
   line-height: 30px;
+}
+
+.comparing-cards {
+  padding-top: 6rem;
+}
+.comparing-cards .card {
+  background-color: #fff;
+  width: calc(100% / 3 - 24px);
+  box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+}
+.comparing-cards .card .card-logo {
+  border-radius: 8px 8px 0 0;
+  height: 100px;
+  background-color: #f9f9f9;
+}
+.comparing-cards .card.e-procure .card-logo {
+  height: 140px;
+  margin-top: -40px;
+}
+.comparing-cards .card .card-content {
+  padding: 20px 0;
+  list-style-type: none;
+}
+.comparing-cards .card .card-content li {
+  line-height: 28px;
+  padding: 10px 20px;
+  padding-left: 60px;
+  height: 80px;
+  display: flex;
+  position: relative;
+  color: #a0aec0;
+  font-size: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.comparing-cards .card .card-content li:last-of-type {
+  border-bottom: 0;
+}
+.comparing-cards .card .card-content li::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url("/assets/img/close-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+}
+.comparing-cards .card .card-content li.checkmark-icon {
+  color: #1d252d;
+}
+.comparing-cards .card .card-content li.checkmark-icon::after {
+  background-image: url("/assets/img/checkmark-icon.svg");
 }
 
 .cta {

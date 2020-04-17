@@ -1,0 +1,53 @@
+.comparing-cards {
+  padding-top: 6rem;
+  .card {
+    background-color: #fff;
+    width: calc(100% / 3 - 24px);
+    box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    .card-logo {
+      border-radius: 8px 8px 0 0;
+      height: 100px;
+      background-color: #f9f9f9;
+    }
+    &.e-procure .card-logo {
+      height: 140px;
+      margin-top: -40px;
+    }
+    .card-content {
+      padding: 20px 0;
+      list-style-type: none;
+      li {
+        line-height: 28px;
+        padding: 10px 20px;
+        padding-left: 60px;
+        height: 80px;
+        display: flex;
+        position: relative;
+        color: #a0aec0;
+        font-size: 16px;
+        border-bottom: 1px solid #f0f0f0;
+        &:last-of-type {
+          border-bottom: 0;
+        }
+        &::after {
+          content: '';
+          width: 22px;
+          height: 22px;
+          background-image: url('/assets/img/close-icon.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 14px;
+          left: 20px;
+        }
+        &.checkmark-icon {
+          color: $txtColor;
+          &::after {
+            background-image: url('/assets/img/checkmark-icon.svg');
+          }
+        }
+      }
+    }
+  }
+}

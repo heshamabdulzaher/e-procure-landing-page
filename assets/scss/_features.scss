@@ -1,14 +1,15 @@
 .why-eProcure {
+  padding-top: 4rem;
   .features {
     list-style-type: none;
     padding-top: 40px;
     .feature-card {
-      width: calc(100% / 3 - 24px);
-      margin-bottom: 40px;
-      box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
       background-color: #fff;
+      width: calc(100% / 3 - 24px);
+      box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
       border-radius: 8px;
       overflow: hidden;
+      margin-bottom: 40px;
       .card-cover {
         display: flex;
         justify-content: flex-end;
