@@ -2,8 +2,8 @@ footer {
   padding-top: 40px;
   background-color: #fff;
   .col {
-    // width: 25%;
     font-size: 15px;
+    padding: 10px;
     flex: 1;
     p {
       font-size: 14px;
@@ -28,5 +28,39 @@ footer {
     text-align: center;
     font-size: 14px;
     line-height: 46px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  footer {
+    .col.logo {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  footer {
+    .main-container {
+      flex-direction: column;
+    }
+    .col {
+      &.logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+        li:not(:last-of-type) {
+          margin-right: 10px;
+          &::after {
+            content: '|';
+            margin-left: 5px;
+          }
+        }
+      }
+    }
   }
 }
