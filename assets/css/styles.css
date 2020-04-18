@@ -459,7 +459,7 @@ header .btn {
 .comparing-cards .next.prev,
 .comparing-cards .prev.prev {
   left: 0;
-  transform: translateX(-100%) rotate(180deg);
+  transform: translateX(-120%) rotate(180deg);
 }
 .comparing-cards .next.prev.show,
 .comparing-cards .prev.prev.show {
@@ -468,7 +468,7 @@ header .btn {
 .comparing-cards .next.next,
 .comparing-cards .prev.next {
   right: 0;
-  transform: translateX(100%);
+  transform: translateX(120%);
 }
 .comparing-cards .next.next.show,
 .comparing-cards .prev.next.show {

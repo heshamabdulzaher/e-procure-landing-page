@@ -89,14 +89,14 @@
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.1);
     &.prev {
       left: 0;
-      transform: translateX(-100%) rotate(180deg);
+      transform: translateX(-120%) rotate(180deg);
       &.show {
         transform: translateX(0) rotate(180deg);
       }
     }
     &.next {
       right: 0;
-      transform: translateX(100%);
+      transform: translateX(120%);
       &.show {
         transform: translateX(0);
       }
