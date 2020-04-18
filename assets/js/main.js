@@ -12,9 +12,6 @@ document.addEventListener('scroll', function (e) {
 window.onload = function () {
   collapseAmazonCard();
 };
-window.onresize = function () {
-  collapseAmazonCard();
-};
 
 const comaringCardsContainer = document.querySelector('.comparing-cards');
 const amazonCard = document.querySelector('.comparing-cards .card.amazon');
