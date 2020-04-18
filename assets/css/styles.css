@@ -437,7 +437,7 @@ header .btn {
 .comparing-cards .next,
 .comparing-cards .prev {
   position: absolute;
-  top: 30%;
+  top: 5%;
   border-bottom-left-radius: 90px;
   border-top-left-radius: 90px;
   height: 90px;
@@ -446,7 +446,7 @@ header .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.18s ease-in-out;
   z-index: 3;
   padding-left: 6px;
   cursor: pointer;

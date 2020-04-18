@@ -57,6 +57,10 @@ function handleShowingComparingCards(e) {
         prevBtn.classList.add('show');
         nextBtn.classList.add('show');
       }
+      if (currentIndex === 3) {
+        nextBtn.classList.remove('show');
+        nextIndex = 3;
+      }
     } else {
       nextIndex = currentIndex - 1;
       if (nextIndex === 1) {
@@ -65,6 +69,10 @@ function handleShowingComparingCards(e) {
       } else {
         prevBtn.classList.add('show');
         nextBtn.classList.add('show');
+      }
+      if (currentIndex === 1) {
+        prevBtn.classList.remove('show');
+        nextIndex = 1;
       }
     }
     nextCard = comaringCardsContainer.querySelector(
