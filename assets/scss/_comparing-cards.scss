@@ -57,6 +57,10 @@
           top: 14px;
           left: 20px;
         }
+        &.line-through {
+          text-decoration: line-through;
+          opacity: 0.8;
+        }
         &.checkmark-icon {
           color: #000;
           &::after {
@@ -74,7 +78,7 @@
     border-top-left-radius: 90px;
     height: 90px;
     width: 45px;
-    background-color: #1f1f1f;
+    background-color: rgba(31, 31, 31, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
