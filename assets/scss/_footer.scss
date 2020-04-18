@@ -55,9 +55,14 @@ footer {
         padding-top: 0;
         li:not(:last-of-type) {
           margin-right: 10px;
-          &::after {
-            content: '|';
-            margin-left: 5px;
+          a {
+            // padding: 12px;
+            white-space: nowrap;
+            &::after {
+              content: '|';
+              margin-left: 8px;
+              opacity: 0.4;
+            }
           }
         }
       }

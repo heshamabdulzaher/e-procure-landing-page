@@ -2,6 +2,8 @@
   padding-top: 6rem;
   .main-container {
     position: relative;
+    overflow: hidden;
+    padding: 30px;
   }
   .card {
     background-color: #fff;
@@ -9,12 +11,24 @@
     box-shadow: 2px 5px 22px rgba(0, 0, 0, 0.07);
     border-radius: 8px;
     overflow: hidden;
+    transition: all 0.2s ease-in-out 0.1s;
+    * {
+      transition: all 0.15s ease-in-out;
+    }
     &.collapse {
       width: 0;
+      * {
+        opacity: 0;
+        transform: translateY(10px);
+      }
     }
     .card-logo {
       height: 100px;
       background-color: #f9f9f9;
+      img {
+        width: 180px;
+        max-height: 100%;
+      }
     }
     .card-content {
       padding: 20px 0;
@@ -44,7 +58,7 @@
           left: 20px;
         }
         &.checkmark-icon {
-          color: $txtColor;
+          color: #000;
           &::after {
             background-image: url('/assets/img/checkmark-icon.svg');
           }
@@ -52,20 +66,40 @@
       }
     }
   }
-  .next {
+  .next,
+  .prev {
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    top: 30%;
     border-bottom-left-radius: 90px;
     border-top-left-radius: 90px;
     height: 90px;
     width: 45px;
     background-color: #1f1f1f;
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+    padding-left: 6px;
+    cursor: pointer;
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.1);
+    &.prev {
+      left: 0;
+      transform: translateX(-100%) rotate(180deg);
+      &.show {
+        transform: translateX(0) rotate(180deg);
+      }
+    }
+    &.next {
+      right: 0;
+      transform: translateX(100%);
+      &.show {
+        transform: translateX(0);
+      }
+    }
+    svg {
+      opacity: 0.7;
+    }
   }
 }
 
@@ -81,13 +115,22 @@
   .comparing-cards {
     overflow-x: auto;
     .main-container {
-      padding: 0 50px;
+      padding: 0 20px;
     }
     .card {
-      width: calc(100% / 2 - 12px);
-      &:first-of-type {
-        margin-right: 24px;
+      width: 50%;
+      margin: 0 10px;
+      &.collapse {
+        margin: 0;
       }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .comparing-cards {
+    .card {
+      width: 100%;
+      margin: 0;
     }
   }
 }
